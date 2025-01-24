@@ -1,0 +1,126 @@
+.card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    padding: 2px;
+    background-color: transparent;
+    border-radius: 8px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-family: serif;
+  }
+.h1 {
+    font-family: serif;
+    color:#fff
+  }
+  .card1-group,
+  .card2-group {
+    display: flex;
+    gap: 7px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .card1 {
+    flex:  auto;
+    width: 220px;
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow: 2px 3px 0px 0px rgba(71,198,232, 0.5);
+    padding: 4px;
+  }
+  
+  .card1-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .card1-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .card1-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .card1-subtitle {
+    font-size: 16px;
+    font-weight: semibold;
+    color: #0a0500;
+    background-color: #ffddbb;
+    padding: 2px;
+    border-radius: 5px;
+  }
+  
+  .card1-value {
+    font-size: 16px;
+    font-weight: bold;
+    color: #009688;
+    text-align: center;
+  }
+  .card1-value.value {
+    font-size: 16px;
+    font-weight: bold;
+    color: #009688;
+  }
+  
+  .card1-unit {
+    font-size: 16px;
+    color: #333333;
+    margin-left: 4px;
+  }
+  .card2 {
+    flex: auto;
+    width: 220px;
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow: 2px 3px 0px 0px rgba(71,198,232, 0.5);
+    padding: 5px;
+  }
+  
+  .card2-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .card2-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .card2-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .card2-subtitle {
+    font-size: 16px;
+    font-weight: semibold;
+    color: #0a0500;
+    background-color: #ffddbb;
+    padding: 2px;
+    border-radius: 5px;
+  }
+  
+  .card2-value {
+    font-size: 16px;
+    font-weight: bold;
+    color: #673AB7;
+     text-align: center;
+  }
+  
+  .card2-unit {
+    font-size: 16px;
+    color: #333333;
+    margin-left: 4px;
+  }

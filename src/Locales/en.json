@@ -1,0 +1,15 @@
+{
+    "welcome": "Welcome",
+    "language": "Language",
+    "submit": "Submit",
+    "logout": "Log out",
+    "profile": "Profile",
+    "lightmode" : "Light Mode",
+    "darkmode" : "Dark Mode", 
+    "dashboard" : "Dash board",
+    "today" : "Today",
+    "thisMonth" : "This Month",
+    "thisYear" : "This Year",
+    "temperature" : "Temperature"
+  }
+  
