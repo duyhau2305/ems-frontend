@@ -6,7 +6,7 @@ import Dashboard from '../Pages/Dashboard';
 import PerformanceChart from '../Components/Chart/BarChart/PerformanceChart';
 import Area01 from '../Pages/KPis Area/Area01';
 import Area02 from '../Pages/KPis Area/Area02';
-import OverStation from '../Pages/Station/Overstation';
+// import OverStation from '../Pages/Station/Overstation';
 
 const AppRouter: React.FC = () => (
   <Router>
@@ -36,11 +36,11 @@ const AppRouter: React.FC = () => (
           <PerformanceChart />
         </MainLayout>
       } />
-      <Route path="/station/infor" element={
+      {/* <Route path="/station/infor" element={
         <MainLayout>
           <OverStation />
         </MainLayout>
-      } />
+      } /> */}
     </Routes>
   </Router>
 );
