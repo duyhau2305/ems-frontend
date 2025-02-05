@@ -33,14 +33,15 @@ const mockData = {
   return (
     
     <div className="card-container">
+      <h2 className="font-bold dark:text-white" >WEATHER INFORMATION</h2>
       <div className="card-group">
         <div className="card">
           <div className="card-content">
             <div className="card-header">
               <Thermometer className="w-6 h-6 mr-2 text-[#009688]" />
-              <div className="card-title" data-translate="temperature">Temperature</div>
+              <div className="text-base font-bold text-[#0a0500] dark:text-white mb-4 mt-2" data-translate="temperature">Temperature</div>
             </div>
-            <div className="card-value">{mockData.nhietdo}<span className="card-unit"> &deg;C</span></div>
+            <div className="text-base font-bold text-[#673AB7] dark:text-[#FFC107] text-center">{mockData.nhietdo}<span className="text-base font-bold text-[#673AB7] dark:text-[#FFC107] text-center"> &deg;C</span></div>
           </div>
         </div>
 
@@ -48,9 +49,9 @@ const mockData = {
           <div className="card-content">
             <div className="card-header">
               <ThermometerSnowflake className="w-6 h-6 mr-2 text-[#009688]" />
-              <div className="card-title" data-translate="cellTemp">Cell Temp</div>
+              <div className="text-base font-bold text-[#0a0500] dark:text-white mb-4 mt-2" data-translate="cellTemp">Cell Temp</div>
             </div>
-            <div className="card-value">{mockData.nhietdoduoicell}<span className="card-unit">&deg;C</span></div>
+            <div className="text-base font-bold text-[#673AB7] dark:text-[#FFC107] text-center">{mockData.nhietdoduoicell} <span className="text-base font-bold text-[#673AB7] dark:text-[#FFC107] text-center">&deg;C</span></div>
           </div>
         </div>
 
@@ -58,10 +59,10 @@ const mockData = {
           <div className="card-content">
             <div className="card-header">
               <Sun className="w-6 h-6 mr-2 text-[#009688]" />
-              <div className="card-title" data-translate="radiation">Radiation</div>
+              <div className="text-base font-bold text-[#0a0500] dark:text-white mb-4 mt-2" data-translate="radiation">Radiation</div>
             </div>
-            <div className="card-unit-group">
-              <div className="card-value">{mockData.bucxa}<span className="card-unit">W/m²</span></div>
+            <div className="text-base font-bold text-[#673AB7] dark:text-[#FFC107] text-center-group">
+              <div className="text-base font-bold text-[#673AB7] dark:text-[#FFC107] text-center">{mockData.bucxa} <span className="text-base font-bold text-[#673AB7] dark:text-[#FFC107] text-center">W/m²</span></div>
             </div>
           </div>
         </div>
@@ -70,10 +71,10 @@ const mockData = {
           <div className="card-content">
             <div className="card-header">
               <Wind className="w-6 h-6 mr-2 text-[#009688]" />
-              <div className="card-title" data-translate="windSpeed">Wind Speed</div>
+              <div className="text-base font-bold text-[#0a0500] dark:text-white mb-4 mt-2" data-translate="windSpeed">Wind Speed</div>
             </div>
-            <div className="card-unit-group">
-              <div className="card-value">{mockData.tocdo}<span className="card-unit">m/s</span></div>
+            <div className="text-base font-bold text-[#673AB7] dark:text-[#FFC107] text-center-group">
+              <div className="text-base font-bold text-[#673AB7] dark:text-[#FFC107] text-center">{mockData.tocdo} <span className="text-base font-bold text-[#673AB7] dark:text-[#FFC107] text-center">m/s</span></div>
             </div>
           </div>
         </div>

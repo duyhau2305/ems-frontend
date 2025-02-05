@@ -1,0 +1,607 @@
+.card{
+    position: relative;
+    width:100%;
+    height: 60vh;
+   
+    
+}
+.block{
+    position: relative;
+    width: 600px;
+    height:500px;
+   /* border:1px solid red;*/
+    
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#load{
+     /*border: 2px solid #ccc;*/
+     left:170px;
+     position: absolute;
+     top:230px;
+    
+}
+#load1{
+     /*border: 2px solid #ccc;*/
+     left:170px;
+     position: absolute;
+     top:230px;
+    
+}
+#load2{
+     /*border: 2px solid #ccc;*/
+     left:170px;
+     position: absolute;
+     top:230px;
+    
+}
+#load3{
+     /*border: 2px solid #ccc;*/
+     left:170px;
+     position: absolute;
+     top:230px;
+    
+}
+#load4{
+     /*border: 2px solid #ccc;*/
+     left:170px;
+     position: absolute;
+     top:230px;
+    
+}
+#load5{
+     /*border: 2px solid #ccc;*/
+     left:170px;
+     position: absolute;
+     top:230px;
+    
+}
+#string{
+   /*  border: 2px solid #ccc;*/
+     position: absolute;
+     top:340px;
+     left:400px;
+}
+#grid{
+     /*border: 2px solid #ccc;*/
+     position: absolute;
+     top:310px;
+}
+.line1 {
+    position: absolute;
+   
+    display: inline-block; /* Cho phép span có kích thước */
+    width: 60px; /* Chiều dài của đường xiên */
+    height: 1px; /* Độ dày của đường xiên */
+   /* background: #ccc; /* Màu sắc của đường xiên */
+   background: #ccc;
+    transform: rotate(-90deg); /* Xoay đường xiên */
+    transform-origin: top left;/*đặt điẻm quay ở góc bên trái*/
+    top:338px;
+    left:85px;
+}
+.line2 {
+    position: absolute;
+   
+    display: inline-block; /* Cho phép span có kích thước */
+    width: 60px; /* Chiều dài của đường xiên */
+    height: 1px; /* Độ dày của đường xiên */
+   /* background: #ccc; /* Màu sắc của đường xiên */
+   background: #ccc;
+    transform: rotate(-90deg); /* Xoay đường xiên */
+    transform-origin: top left;/*đặt điẻm quay ở góc bên trái*/
+    top:235px;
+    left:262px;
+}
+.line3 {
+    position: absolute;
+   
+    display: inline-block; /* Cho phép span có kích thước */
+    width: 60px; /* Chiều dài của đường xiên */
+    height: 1px; /* Độ dày của đường xiên */
+   /* background: #ccc; /* Màu sắc của đường xiên */
+   background: #ccc;
+    transform: rotate(-90deg); /* Xoay đường xiên */
+    transform-origin: top left;/*đặt điẻm quay ở góc bên trái*/
+    top:355px;
+     left:487px;
+}
+.diagonal-line1 {
+    position: absolute;
+   
+    display: inline-block; /* Cho phép span có kích thước */
+    width: 140px; /* Chiều dài của đường xiên */
+    height: 1px; /* Độ dày của đường xiên */
+   /* background: #ccc; /* Màu sắc của đường xiên */
+   background: #ccc;
+    transform: rotate(-27deg); /* Xoay đường xiên */
+    transform-origin: top left;/*đặt điẻm quay ở góc bên trái*/
+    top:360px;
+    left:80px;
+}
+.diagonal-line2 {
+    position: absolute;
+   
+    display: inline-block; /* Cho phép span có kích thước */
+    width: 195px; /* Chiều dài của đường xiên */
+    height: 1px; /* Độ dày của đường xiên */
+   /* background: #ccc; /* Màu sắc của đường xiên */
+   background: #ccc;
+    transform: rotate(26deg); /* Xoay đường xiên */
+    transform-origin: top left;/*đặt điẻm quay ở góc bên trái*/
+    top:290px;
+    left:275px;
+}
+.curve1 {
+    position: absolute;
+   
+    display: inline-block; /* Cho phép span có kích thước */
+    width: 145px; /* Chiều dài của đường xiên */
+    height: 1px; /* Độ dày của đường xiên */
+   /* background: #ccc; /* Màu sắc của đường xiên */
+   background: #ccc;
+    transform: rotate(30deg); /* Xoay đường xiên */
+    transform-origin: top left;/*đặt điẻm quay ở góc bên trái*/
+    top:395px;
+    left:110px;
+    
+}
+.curve2 {
+    position: absolute;
+   
+    display: inline-block; /* Cho phép span có kích thước */
+    width: 114px; /* Chiều dài của đường xiên */
+    height:1px; /* Độ dày của đường xiên */
+   /* background: #ccc; /* Màu sắc của đường xiên */
+   background:#ccc;
+    transform: rotate(-34.5deg); /* Xoay đường xiên */
+    transform-origin: top right;/*đặt điẻm quay ở góc bên trái*/
+    top:410px;
+    left:347px;
+    
+}
+.di{
+    
+    position: absolute;
+    top:300px;
+    left:200px;
+     transform: rotate(180deg); /* Xoay đường xiên */
+     color: #ccc;
+   
+}
+
+
+.g1{
+    width:30px;
+    height: 3px;
+    background-color: #0AFAD9DE;
+    position:absolute;
+    transform: rotate(-27deg);
+    transform-origin: top left;
+    top:50px;
+    left:40px;
+    
+     
+   /*animation: moveArrow 5s linear infinite;*/
+  
+}
+.g2{
+    width: 10;
+    height: 10;
+    border-top: 7.5px solid transparent;
+    border-bottom: 7.5px solid transparent;
+    border-right:7.5px solid #0AFAD9DE; /* Độ dài của mũi tên */
+    transform: rotate(34deg);
+    position:absolute;
+    top:30px;
+    left:65px;
+   
+}
+.g0{
+    width:100px;
+    height: 100px;
+  
+  animation: moveArrow 5s linear infinite;
+  
+    position:absolute;
+    
+    /*border: 2px solid #ccc;*/
+    
+    top:310px;
+    left:30px;
+}
+@keyframes moveArrow {
+    0% {
+        transform: translate(0, 0); /* Bắt đầu từ vị trí gốc */
+    }100% {
+        transform: translate(103px, -55px); /* Kết thúc ở vị trí mới (200px, 200px) */
+    }
+    
+}
+.s1{
+    width:30px;
+    height: 3px;
+    background-color: #0AFAD9DE;
+    position:absolute;
+    transform: rotate(-153deg);
+    transform-origin: top left;
+    top:75px;
+    left:46px;
+    
+     
+   /*animation: moveArrow 5s linear infinite;*/
+  
+}
+.s2{
+    width: 10;
+    height: 10;
+    border-top: 7.5px solid transparent;
+    border-bottom: 7.5px solid transparent;
+    border-right:7.5px solid #0AFAD9DE; /* Độ dài của mũi tên */
+    transform: rotate(33deg);
+    position:absolute;
+    top:52px;
+    left:15px;
+   
+}
+.s0{
+    width:70px;
+    height: 100px;
+   animation: moveArrow1 5s linear infinite;
+    position:absolute;
+  
+    /*border: 2px solid #ccc;*/
+  
+    top:300px;
+     left:400px;
+}
+@keyframes moveArrow1 {
+    0% {
+        transform: translate(0, 0); /* Bắt đầu từ vị trí gốc */
+    }100% {
+        transform: translate(-150px, -72px); /* Kết thúc ở vị trí mới (200px, 200px) */
+    }
+    
+}
+.t1{
+    width:30px;
+    height: 3px;
+    background-color: #0AFAD9DE;
+    position:absolute;
+    transform: rotate(145deg);
+    transform-origin: top left;
+    top:60px;
+    left:60px;
+    
+     
+   /*animation: moveArrow 5s linear infinite;*/
+  
+}
+.t2{
+    width: 10;
+    height: 10;
+    border-top: 7.5px solid transparent;
+    border-bottom: 7.5px solid transparent;
+    border-right:7.5px solid #0AFAD9DE; /* Độ dài của mũi tên */
+    transform: rotate(-32deg);
+    position:absolute;
+    top:68px;
+    left:31px;
+   
+}
+.t0{
+    width:100px;
+    height: 100px;
+  
+   animation: moveArrow2 5s linear infinite;
+  
+    position:absolute;
+    
+    /*border: 2px solid #ccc;*/
+    
+    top:350px;
+    left:400px;
+}
+@keyframes moveArrow2 {
+    0% {
+        transform: translate(0, 0); /* Bắt đầu từ vị trí gốc */
+    }100% {
+        transform: translate(-65px, 46px); /* Kết thúc ở vị trí mới (200px, 200px) */
+    }
+    
+}
+.v1{
+    width:30px;
+    height: 3px;
+    background-color: #0AFAD9DE;
+    position:absolute;
+    transform: rotate(30deg);
+    transform-origin: top left;
+    top:68px;
+    left:60px;
+    
+     
+   /*animation: moveArrow 5s linear infinite;*/
+  
+}
+.v2{
+    width: 10;
+    height: 10;
+    border-top: 7.5px solid transparent;
+    border-bottom: 7.5px solid transparent;
+    border-right:7.5px solid #0AFAD9DE; /* Độ dài của mũi tên */
+    transform: rotate(26deg);
+    position:absolute;
+    top:62px;
+    left:55px;
+   
+}
+.v0{
+    width:100px;
+    height: 100px;
+ 
+   animation: moveArrow3 5s linear infinite;
+ 
+    position:absolute;
+    
+    /*border: 2px solid #ccc;*/
+    
+    top:382px;
+    left:150px;
+}
+@keyframes moveArrow3 {
+    0% {
+        transform: translate(0, 0); /* Bắt đầu từ vị trí gốc */
+    }100% {
+        transform: translate(-102px, -60px); /* Kết thúc ở vị trí mới (200px, 200px) */
+    }
+    
+}
+.tai{
+    width:50px;
+    height:20px;
+    /*border: 2px solid #ccc;*/
+     left:310px;
+     position: absolute;
+     top:280px;
+     font-size: 14px;
+}
+.pv{
+    width:50px;
+    height:20px;
+   /* border: 2px solid #ccc;*/
+     position: absolute;
+     top:410px;
+     left:500px;
+      font-size: 14px;
+     
+}
+.luoi{
+     position: absolute;
+     left:40px;
+     top:410px;
+      width:100px;
+    height:20px;
+    /*border: 2px solid #ccc;*/
+    font-size: 14px;
+}
+.pout{
+     position: absolute;
+     top:290px;
+     left:500px;
+      width:150px;
+    height:20px;
+    /*border: 2px solid #ccc;*/
+    font-size:12px;
+}
+.pcurrent{
+    position: absolute;
+    left:90px;
+    top:280px;
+    width:150px;
+    height:20px;
+   /* border: 2px solid #ccc;*/
+    font-size: 12px;
+}
+.psum{
+  
+      width:250px;
+    height:20px;
+    /*border: 2px solid #ccc;*/
+    left:270px;
+     position: absolute;
+     top:170px;
+     font-size:12px;
+}
+.unit_pcurrent{
+     position: absolute;
+     left:120px;
+     top:360px;
+      width:150px;
+    height:20px;
+    /*border: 2px solid #ccc;*/
+    
+}
+.unit_pout{
+     position: absolute;
+     top:300px;
+     left:360px;
+      width:150px;
+    height:20px;
+   /* border: 2px solid #ccc;*/
+}
+.unit_psum{
+      width:250px;
+    height:20px;
+ /*   border: 2px solid #ccc;*/
+    left:100px;
+     position: absolute;
+     top:200px;
+}
+.nghiemtrong{
+    width:22.5%;
+    height:50px;
+    position: absolute;
+  
+  border: 1px solid #ccc;
+   
+    text-align: center;
+    border-radius: 10px;
+    top:4%;
+    left:2%;
+    
+}
+.iconnt{
+    position: absolute;
+    left:10%;
+    top:30%;
+}
+.titlent{
+    
+   
+   /* border: 1px solid #ccc;*/
+    position: absolute;
+    left:30%;
+    top:30%;
+}
+.count_nt{
+    position: absolute;
+    left:85%;
+    top:30%;
+}
+/*----------------------*/
+.cao{
+    width:22.5%;
+    height:50px;
+    position: absolute;
+  
+    border: 1px solid #ccc;
+  
+    text-align: center;
+    border-radius: 10px;
+    left:26.5%;
+    top:4%;
+    
+}
+.iconc{
+    position: absolute;
+    left:10%;
+    top:30%;
+}
+.titlec{
+    
+   /* border: 1px solid #ccc;*/
+    position: absolute;
+    left:30%;
+    top:30%;
+}
+.count_c{
+    position: absolute;
+    left:85%;
+    top:30%;
+}
+/*----------------------*/
+.thap{
+    width:22.5%;
+    height:50px;
+    position: absolute;
+    border: 1px solid #ccc;
+    text-align: center;
+    border-radius: 10px;
+    left:51%;
+    top:4%;
+    
+}
+.icont{
+    position: absolute;
+    left:10%;
+    top:30%;
+}
+.titlet{
+    
+    /*border: 1px solid #ccc;*/
+    position: absolute;
+    left:30%;
+    top:30%;
+}
+.count_t{
+    position: absolute;
+    left:85%;
+    top:30%;
+}
+/*--------------------------------*/
+.canhbao{
+    width:22.5%;
+    height:50px;
+    position: absolute;
+    border: 1px solid #ccc;
+    text-align: center;
+    border-radius: 10px;
+    left:75.5%;
+    top:4%;
+    
+}
+.iconcb{
+    position: absolute;
+    left:10%;
+    top:30%;
+}
+.titlecb{
+    
+  /*  border: 1px solid #ccc;*/
+    position: absolute;
+    left:30%;
+    top:30%;
+}
+.count_cb{
+    position: absolute;
+    left:80%;
+    top:30%;
+}
+.btn-group {
+  
+    margin-left: 5px;
+}
+ table {
+           position: absolute;
+            width: 95%;
+            top:85%;
+            border-collapse: collapse;
+            /*font-family: serif;*/
+            border-radius: 8px;
+            
+            overflow: hidden;
+            left:2.5%;
+            
+        }
+
+
+        th, td {
+            text-align: center;
+            padding: 12px;
+            border: 1px solid #048AD3;
+            width: 16%;
+        }
+
+        th {
+          /*  background-color: #009688;*/
+            /*color: white;*/
+            font-size: 16px;
+            /*font-weight: bold;*/
+        }
+
+        td {
+            /*background-color: transparent;*/
+            font-size: 16px;
+            /*color: #545454;*/
+        }
+
+        tr:nth-child(even) td {
+           /* background-color: #e0e0e0;*/
+        }
+
+        tr:hover td {
+            /*background-color: #d9eefc;*/
+            cursor: pointer;
+        }

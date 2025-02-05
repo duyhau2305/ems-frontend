@@ -10,6 +10,11 @@
     "today" : "Today",
     "thisMonth" : "This Month",
     "thisYear" : "This Year",
-    "temperature" : "Temperature"
+    "temperature" : "Temperature",
+    "energySolar" : "Solar Energy",
+    "energyGrid"  : "Grid Energy",
+    "cellTemp" : "Cell Temp",
+    "radiation" : "Irradiance",
+    "windSpeed" : "Win Speed"
   }
   

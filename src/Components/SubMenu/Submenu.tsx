@@ -59,12 +59,12 @@ const Submenu: React.FC<SubmenuProps> = ({
           )}
         </span>
       </div>
-      <div className={`${isOpen && !isCollapsed ? 'block' : 'hidden'} pl-4 mt-2`}>
+      <div className={`${isOpen && !isCollapsed ? 'block' : 'hidden'} pl-2 mt-2`}>
         {items.map((item, index) => (
           <Link
             key={index}
             to={item.link}
-            className="block py-1 px-1 ml-6 text-gray-500 dark:text-white hover:text-blue-500"
+            className="block py-1 px-1 text-sm ml-8 text-gray-500 dark:text-white hover:text-blue-500"
           >
             {item.name}
           </Link>

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { EnergyData, fetchEnergyData } from '../../API/energyService';
 import './EnergyKpis.css'
 
-const EnergyKpis: React.FC = () => {
+const FinicalKpis: React.FC = () => {
   const [energyData, setEnergyData] = useState<EnergyData | null>(null);
   const [loading, setLoading] = useState(true);
 
@@ -27,7 +27,7 @@ const EnergyKpis: React.FC = () => {
   return (
     
     <div className="card-container">
-        <h2 className="font-bold dark:text-white ml-1" >PRODUCTION KPI</h2>
+        <h2 className="font-bold dark:text-white ml-1" >FINICAL KPI</h2>
           <div className="card1-group">
         <div className="card1">
           <div className="card1-content">
@@ -90,4 +90,4 @@ const EnergyKpis: React.FC = () => {
   );
 };
 
-export default EnergyKpis;
+export default FinicalKpis;

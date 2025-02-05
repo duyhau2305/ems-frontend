@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     gap: 7px;
-    padding: 2px;
     background-color: transparent;
     border-radius: 8px;
     position: relative;
@@ -47,7 +46,7 @@
   .card1-title {
     font-size: 16px;
     font-weight: bold;
-    color: #fff;
+    color: #0a0500;
   }
   
   .card1-subtitle {
@@ -65,11 +64,7 @@
     color: #009688;
     text-align: center;
   }
-  .card1-value.value {
-    font-size: 16px;
-    font-weight: bold;
-    color: #009688;
-  }
+ 
   
   .card1-unit {
     font-size: 16px;
@@ -100,7 +95,7 @@
   .card2-title {
     font-size: 16px;
     font-weight: bold;
-    color: #fff;
+    color: #0a0500;
   }
   
   .card2-subtitle {
@@ -124,3 +119,4 @@
     color: #333333;
     margin-left: 4px;
   }
+ 

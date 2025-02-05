@@ -15,7 +15,7 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children, className }) => {
 
  return (
    <div className={`lg:flex h-screen w-screen ${className}`}>
-     <aside className={`bg-gray-200 lg:flex flex-shrink-0 transition-all duration-300 hidden ${isSidebarCollapsed ? 'w-20' : 'w-54'}`}>
+     <aside className={`bg-gray-200 lg:flex flex-shrink-0 transition-all duration-300 hidden ${isSidebarCollapsed ? 'w-20' : 'w-60'}`}>
        <Sidebar
          isCollapsed={isSidebarCollapsed}
          setIsCollapsed={setIsSidebarCollapsed}

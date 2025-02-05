@@ -8,7 +8,7 @@ import { BsBarChartFill } from "react-icons/bs";
 import { AiOutlineThunderbolt } from "react-icons/ai";
 import { GiArtificialHive } from "react-icons/gi";
 // import { AuthContext } from '../../context/AuthContext';
-import { imprtDataItems, QCStItems } from '../../libs/menuItems';
+import { areaItems ,stationItems } from '../../libs/menuItems';
 import logo from '../../assets/image/logo.png';
 import logodark from '../../assets/image/logodark.png';
 import { message } from 'antd';
@@ -41,7 +41,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isCollapsed, setIsCollapsed }) => {
   const isActive = (path: string): boolean => location.pathname === path;
 
   return (
-    <div className={`relative dark:bg-[#0D2743] bg-slate-100 h-full shadow-md ${isCollapsed ? 'w-20' : 'w-60'} font-[Open_Sans] flex flex-col justify-between transition-all duration-300 overflow-y-auto`} style={{ maxHeight: '100vh' }}>
+    <div className={`relative dark:bg-[#0D2743] bg-slate-100 h-full shadow-md ${isCollapsed ? 'w-20' : 'w-64'} font-[Open_Sans] flex flex-col justify-between transition-all duration-300 overflow-y-auto`} style={{ maxHeight: '100vh' }}>
       <div className="flex flex-col items-start p-4 mt-2">
         <div className="flex justify-between w-full">
           {!isCollapsed && (
@@ -51,7 +51,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isCollapsed, setIsCollapsed }) => {
               <h3 className="font-bold text-sky-700 ml-2 flex justify-center dark:text-white">DI.EMS</h3>
             </div>
           )}
-          <button onClick={toggleSidebar} className="mt-4 p-2 h-[50%] rounded-full hover:bg-gray-200 focus:outline-none flex justify-center items-center">
+          <button onClick={toggleSidebar} className="mt-4 p-2 h-[50%] rounded-full cursor-pointer focus:outline-none flex justify-center items-center">
             {isCollapsed ? <FiChevronRight className="text-lg text-gray-500 dark:text-white ml-1" /> : <FiChevronLeft className="text-lg dark:text-white text-gray-500" />}
           </button>
         </div>
@@ -79,22 +79,35 @@ const Sidebar: React.FC<SidebarProps> = ({ isCollapsed, setIsCollapsed }) => {
             title={
               <>
                 <FiGrid 
-                  className={`mr-4 text-lg ${location.pathname.startsWith('/importdata') ? '!text-blue-500 font-bold' : 'text-gray-500'} dark:text-white`}
+                  className={`mr-4 text-lg ${location.pathname.startsWith('/area') ? '!text-blue-500 font-bold' : 'text-gray-500'} dark:text-white`}
                 />
                 {!isCollapsed && (
-                  <span className={`${location.pathname.startsWith('/importdata') ? '!text-blue-500 font-bold' : 'text-gray-500'} dark:text-white`}>
-                    Thông tin trạm
+                  <span className={`${location.pathname.startsWith('/area') ? '!text-blue-500 font-bold' : 'text-gray-500'} dark:text-white`}>
+                    Khu vực
                   </span>
                 )}
               </>
             }
-            items={imprtDataItems}
-            mainLink="/importdata/devivce"
+            items={areaItems}
+            mainLink="/areas/areaA01"
             isCollapsed={isCollapsed}
             onSubmenuClick={() => {}}
             setIsCollapsed={setIsCollapsed}
           />
-
+          
+          <Link 
+            to="/station/infor" 
+            className={`flex items-center ${isActive('/QCS/availablerate') ? '!text-blue-500 font-bold' : 'text-gray-700'} hover:text-blue-500`}
+          >
+            <FiSettings   
+              className={`mr-4 text-lg ${isActive('/QCS/availablerate') ? '!text-blue-500 font-bold' : 'text-gray-500'} dark:text-white hover:text-blue-500`}
+            />
+            {!isCollapsed && (
+              <span className={`${isActive('/QCS/availablerate') ? '!text-blue-500 font-bold' : 'text-gray-500'} dark:text-white hover:text-blue-500`}>
+                Thông tin trạm
+              </span>
+            )}
+          </Link>
           <Link 
             to="/QCS/availablerate" 
             className={`flex items-center ${isActive('/QCS/availablerate') ? '!text-blue-500 font-bold' : 'text-gray-700'} hover:text-blue-500`}
@@ -136,7 +149,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isCollapsed, setIsCollapsed }) => {
                 )}
               </>
             }
-            items={QCStItems.slice(1,5)} 
+            items={stationItems.slice(1,5)} 
             mainLink="/QCS/analysis"
             isCollapsed={isCollapsed}
             onSubmenuClick={() => {}}

@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { EnergyData, fetchEnergyData } from '../../API/energyService';
-import './EnergyKpis.css'
+import { EnergyData, fetchEnergyData } from '../../../API/energyService';
+import '../../KPIs/EnergyKpis.css'
 
-const EnergyKpis: React.FC = () => {
+const EnergyKpisArea: React.FC = () => {
   const [energyData, setEnergyData] = useState<EnergyData | null>(null);
   const [loading, setLoading] = useState(true);
 
@@ -90,4 +90,4 @@ const EnergyKpis: React.FC = () => {
   );
 };
 
-export default EnergyKpis;
+export default EnergyKpisArea;
