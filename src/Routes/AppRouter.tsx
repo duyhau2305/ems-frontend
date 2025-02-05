@@ -11,7 +11,7 @@ import Area02 from '../Pages/KPis Area/Area02';
 const AppRouter: React.FC = () => (
   <Router>
     <Routes>
-      <Route path="/dashboard" element={
+      <Route path="/" element={
         <MainLayout>
           <Dashboard />
         </MainLayout>
