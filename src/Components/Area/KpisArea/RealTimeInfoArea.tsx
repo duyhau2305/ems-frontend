@@ -1,25 +1,25 @@
-import React, { useEffect, useState } from 'react';
-import { EnergyData, fetchEnergyData } from '../../../API/energyService';
+import React, {  } from 'react';
+// import { EnergyData, fetchEnergyData } from '../../../API/energyService';
 import '../../KPIs/EnergyKpis.css'
 
 const RealTimeInfoArea: React.FC = () => {
-  const [energyData, setEnergyData] = useState<EnergyData | null>(null);
-  const [loading, setLoading] = useState(true);
+  // const [energyData, setEnergyData] = useState<EnergyData | null>(null);
+  // const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    const getEnergyData = async () => {
-      try {
-        const data = await fetchEnergyData();
-        setEnergyData(data);
-      } catch (error) {
-        console.error('Failed to fetch energy data:', error);
-      } finally {
-        setLoading(false);
-      }
-    };
+  // useEffect(() => {
+  //   const getEnergyData = async () => {
+  //     try {
+  //       const data = await fetchEnergyData();
+  //       setEnergyData(data);
+  //     } catch (error) {
+  //       console.error('Failed to fetch energy data:', error);
+  //     } finally {
+  //       setLoading(false);
+  //     }
+  //   };
 
-    getEnergyData();
-  }, []);
+  //   getEnergyData();
+  // }, []);
 
 //   if (loading) return <div className="p-4">Loading...</div>;
 //   if (!energyData) return <div className="p-4">No data available</div>;

@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import MainLayout from '../Layouts/MainLayout';
 import Dashboard from '../Pages/Dashboard';
 
-import PowerChart from '../Components/Chart/LineChart/PowerChart';
 import PerformanceChart from '../Components/Chart/BarChart/PerformanceChart';
 import Area01 from '../Pages/KPis Area/Area01';
 import Area02 from '../Pages/KPis Area/Area02';

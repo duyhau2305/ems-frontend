@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link,} from 'react-router-dom';
 import { FiChevronDown, FiChevronRight } from 'react-icons/fi';
 
 interface MenuItem {
@@ -20,12 +20,12 @@ const Submenu: React.FC<SubmenuProps> = ({
   title, 
   items, 
   isCollapsed, 
-  mainLink, 
+  
   setIsCollapsed,
   onSubmenuClick 
 }) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
-  const navigate = useNavigate();
+ 
 
   const toggleSubmenu = (): void => {
     if (isCollapsed) {
@@ -36,9 +36,7 @@ const Submenu: React.FC<SubmenuProps> = ({
     onSubmenuClick?.();
   };
 
-  const handleMainLinkClick = (): void => {
-    navigate(mainLink);
-  };
+ 
 
   return (
     <div className="flex flex-col">

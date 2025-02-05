@@ -25,9 +25,9 @@ const OverStation: React.FC = () => {
                 
                 
             </div>
-            {/* <div className="col-span-1 ">
+            <div className="col-span-1 ">
                 <PowerFlow />
-            </div> */}
+            </div>
         </div>
         <div className=""> 
             <div className="grid grid-cols-2 gap-2">
