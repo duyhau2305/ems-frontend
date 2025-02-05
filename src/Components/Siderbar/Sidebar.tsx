@@ -62,7 +62,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isCollapsed, setIsCollapsed }) => {
       <div className="flex-grow flex flex-col space-y-4 p-2 mt-4 text-gray-500">
         <nav className="flex flex-col space-y-4">
           <Link 
-            to="/dashboard" 
+            to="/" 
             className={`flex items-center ${isActive('/dashboard') ? '!text-blue-500 font-bold' : 'text-gray-700'} hover:text-blue-500`}
           >
             <FiHome 
